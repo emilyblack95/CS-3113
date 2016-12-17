@@ -1,0 +1,11 @@
+MAIN=hw5.c
+EXE_NAME=hw5
+CC=gcc
+
+all: clean build
+
+build: $(MAIN)
+	$(CC) $(MAIN) -o $(EXE_NAME) -lpthread -lrt
+
+clean:
+	$(RM) $(EXE_NAME)
